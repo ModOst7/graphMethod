@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="raphael.js"></script>
+	<script type="text/javascript" src="d3/d3.js"></script>
+	<script src="jquery-2.2.4.js"></script>
+	<script src="modul.js"></script>
+</head>
+<body>
+<div class="dropdown-menu">About</div>
+<div id="about">
+<span id="close">Close</span>
+<h1>About</h1>
+<span>something intredasting... something intredasting... something intredasting...
+something intredasting... something intredasting... something intredasting...
+something intredasting...</span>
+</div>
+<div id="chalkboard">
+Функция:
+<form id="function" name="func">
+<input type="text" value=""></input>x<sub>1</sub>  
+<input type="text" value=""></input>x<sub>2</sub>  +
+<input type="text" value=""></input>
+<select>
+	<option>min</option>
+	<option>max</option>
+</select>
+</form>
+дополнительные ограничения:
+<select id="addLimits">
+	<option value=1>x1,x2≥0</option>
+	<option value=2>x1,x2≤0</option>
+	<option value=3>x1≤0,x2≥0</option>
+	<option value=4>x1≥0,x2≤0</option>
+</select>
+
+<br><br>
+Ограничения:
+<div id="wrap">
+<form>
+<select size=3 onchange="chang(event)">
+
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+</form>
+</div>
+<div id="limitDiv">
+
+</div>
+<button>Вычислить</button>
+
+<div id="container"></div>
+</div>
+<div id="help">
+<div>Здравствуйте, вам нужна помощь?<br>
+<button id="yes">Да.</button>
+<button id="no">Нет</button>
+</div>
+</div>
+</body>
+</html>
